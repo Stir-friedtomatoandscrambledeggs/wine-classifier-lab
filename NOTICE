@@ -1,0 +1,21 @@
+# NOTICE
+
+本项目基于以下开源项目与数据集二次开发：
+
+## 训练与评价库
+- **scikit-learn 1.9.1** — BSD-3-Clause
+  来源：https://github.com/scikit-learn/scikit-learn
+  用途：Pipeline、StandardScaler、LogisticRegression、RandomForest、交叉验证、指标
+
+## 推理界面库
+- **Streamlit 1.66.0** — Apache License 2.0
+  来源：https://github.com/streamlit/streamlit
+  用途：本地 Web 表单与批量 CSV 推理界面
+
+## 数据集
+- **Wine 数据集** — Creative Commons Attribution 4.0 International (CC BY 4.0)
+  原始来源：UCI Machine Learning Repository, https://archive.ics.uci.edu/dataset/109/wine
+  通过 `sklearn.datasets.load_wine(as_frame=True)` 离线加载，178 样本、13 数值特征、3 类。
+
+## 个人实现
+src/、app.py、tests/、README、model_card 均为本人实验四实现，未复制其他学生代码。
