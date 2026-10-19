@@ -1,0 +1,111 @@
+{
+  "task": "Wine 三分类（红酒品种识别）",
+  "positive_cost": "三类均衡，主指标 macro-F1；误判任意一类业务代价相近",
+  "model_name": "logreg",
+  "sklearn_version": "1.9.1",
+  "python_version": "3.14.7",
+  "git_commit": "unknown",
+  "feature_order": [
+    "alcohol",
+    "malic_acid",
+    "ash",
+    "alcalinity_of_ash",
+    "magnesium",
+    "total_phenols",
+    "flavanoids",
+    "nonflavanoid_phenols",
+    "proanthocyanins",
+    "color_intensity",
+    "hue",
+    "od280/od315_of_diluted_wines",
+    "proline"
+  ],
+  "target_names": [
+    "class_0",
+    "class_1",
+    "class_2"
+  ],
+  "random_state": 42,
+  "split": "train 60% / val 20% / test 20%, stratified, seed=42",
+  "metrics_on_test": {
+    "accuracy": 0.9722222222222222,
+    "macro_f1": 0.9709618874773139,
+    "weighted_f1": 0.9719701552732407,
+    "macro_precision": 0.9777777777777779,
+    "macro_recall": 0.9666666666666667
+  },
+  "confusion_matrix": [
+    [
+      12,
+      0,
+      0
+    ],
+    [
+      0,
+      14,
+      0
+    ],
+    [
+      0,
+      1,
+      9
+    ]
+  ],
+  "train_range": {
+    "alcohol": [
+      11.03,
+      14.83
+    ],
+    "malic_acid": [
+      0.74,
+      5.51
+    ],
+    "ash": [
+      1.36,
+      2.84
+    ],
+    "alcalinity_of_ash": [
+      10.6,
+      30.0
+    ],
+    "magnesium": [
+      78.0,
+      162.0
+    ],
+    "total_phenols": [
+      0.98,
+      3.88
+    ],
+    "flavanoids": [
+      0.34,
+      3.74
+    ],
+    "nonflavanoid_phenols": [
+      0.13,
+      0.63
+    ],
+    "proanthocyanins": [
+      0.42,
+      3.28
+    ],
+    "color_intensity": [
+      1.9,
+      11.75
+    ],
+    "hue": [
+      0.54,
+      1.71
+    ],
+    "od280/od315_of_diluted_wines": [
+      1.29,
+      3.82
+    ],
+    "proline": [
+      342.0,
+      1515.0
+    ]
+  },
+  "trained_at": "2026-10-19 21:33:30",
+  "warning": "仅用于课程演示，不构成真实业务决策",
+  "model_sha256": "ac22d86a7354d75a070b2b14fff38c9c7333013341c9b5ef054f0c8345f89b9e"
+}
